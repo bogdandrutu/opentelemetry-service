@@ -49,7 +49,7 @@ require (
 	github.com/tcnksm/ghr v0.13.0
 	github.com/uber/jaeger-lib v2.2.0+incompatible
 	go.opencensus.io v0.22.3
-	go.uber.org/atomic v1.5.1
+	go.uber.org/atomic v1.6.0
 	go.uber.org/zap v1.13.0
 	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 	golang.org/x/sys v0.0.0-20200408040146-ea54a3c99b9b
