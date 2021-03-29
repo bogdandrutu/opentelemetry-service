@@ -11,7 +11,6 @@ require (
 	github.com/cenkalti/backoff/v4 v4.1.0
 	github.com/census-instrumentation/opencensus-proto v0.3.0
 	github.com/coreos/go-oidc v2.2.1+incompatible
-	github.com/davecgh/go-spew v1.1.1
 	github.com/fatih/structtag v1.2.0
 	github.com/go-kit/kit v0.10.0
 	github.com/go-ole/go-ole v1.2.5 // indirect
@@ -49,7 +48,7 @@ require (
 	golang.org/x/sys v0.0.0-20210309074719-68d13333faf2
 	golang.org/x/text v0.3.5
 	google.golang.org/genproto v0.0.0-20210302174412-5ede27ff9881
-	google.golang.org/grpc v1.36.0
+	google.golang.org/grpc v1.36.1
 	google.golang.org/grpc/examples v0.0.0-20210309220351-d5b628860d4e // indirect
 	google.golang.org/protobuf v1.26.0
 	gopkg.in/square/go-jose.v2 v2.5.1 // indirect
