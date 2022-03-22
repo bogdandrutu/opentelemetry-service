@@ -23,7 +23,7 @@ require (
 	go.opencensus.io v0.23.0
 	go.opentelemetry.io/collector/model v0.47.0
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.30.0
-	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.29.0
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.30.0
 	go.opentelemetry.io/contrib/zpages v0.29.0
 	go.opentelemetry.io/otel v1.5.0
 	go.opentelemetry.io/otel/exporters/prometheus v0.27.0
