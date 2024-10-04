@@ -56,13 +56,14 @@ func NewMetricsProcessor(
 		span.AddEvent("Start processing.", eventOptions)
 		pointsIn := md.DataPointCount()
 
-		md, err = metricsFunc(ctx, md)
+		var errFunc error
+		md, errFunc = metricsFunc(ctx, md)
 		span.AddEvent("End processing.", eventOptions)
-		if err != nil {
-			if errors.Is(err, ErrSkipProcessingData) {
+		if errFunc != nil {
+			if errors.Is(errFunc, ErrSkipProcessingData) {
 				return nil
 			}
-			return err
+			return errFunc
 		}
 		pointsOut := md.DataPointCount()
 		obs.recordInOut(ctx, pointsIn, pointsOut)
