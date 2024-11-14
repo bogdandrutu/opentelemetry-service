@@ -478,13 +478,12 @@ func (gss *ServerConfig) getGrpcServerOptions(
 		})
 	}
 
+	// Enable OpenTelemetry observability plugin.
 	otelOpts := []otelgrpc.Option{
 		otelgrpc.WithTracerProvider(settings.TracerProvider),
 		otelgrpc.WithPropagators(otel.GetTextMapPropagator()),
 		otelgrpc.WithMeterProvider(settings.LeveledMeterProvider(configtelemetry.LevelDetailed)),
 	}
-
-	// Enable OpenTelemetry observability plugin.
 
 	uInterceptors = append(uInterceptors, enhanceWithClientInformation(gss.IncludeMetadata))
 	sInterceptors = append(sInterceptors, enhanceStreamWithClientInformation(gss.IncludeMetadata))
